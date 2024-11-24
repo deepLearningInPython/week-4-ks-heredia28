@@ -78,7 +78,7 @@ print(result)
 
 # Your code here:
 # -----------------------------------------------
-print({word: tokenize(text).count(word) for word in tokenize(text) if tokenize(text).count(word) > 1})
+word_frequencies = {word: tokenize(text).count(word) for word in tokenize(text) if tokenize(text).count(word) > 1}
 
 # Expected output example: {'the': 2, 'quick': 1, ...}
 print(word_frequencies)
